@@ -1,0 +1,244 @@
+:root {
+    --primary-text-color: #757575;
+    --primary-title-color: #212121;
+    --primary-link-color: #212121;
+    --link-hover-color: #2196f3;
+}
+a {
+    cursor: pointer;
+}
+/* background color */
+body {
+    background-color: #ffffff;
+    color: var(--primary-text-color);
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.03em;
+}
+/* logo */
+.logo-link {
+    text-decoration: none;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    /* identical to box height */
+    
+}
+.logo-blue {
+    color: var(--link-hover-color);
+}
+.logo-black {
+    color: #000000;
+}
+.logo-link:focus {
+    color: var(--link-hover-color);
+}
+/* навігація */
+.site-nav li {
+    display: inline-block;
+}
+.site-nav a {
+    text-decoration: none;
+    color: var(--primary-link-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+}
+.site-nav a:hover {
+color: var(--link-hover-color);
+text-decoration: none;
+}
+.site-nav .current {
+    color: var(--link-hover-color);
+}
+.site-nav a:focus {
+    color:var(--link-hover-color);
+}
+/* contacts */
+ul.contacts {
+color: var(--primary-text-color);
+}
+ul.contacts>li {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+}
+.cont-email:hover { 
+    color:var(--link-hover-color);
+}
+.cont-email{
+    color: var(--primary-text-color);
+    text-decoration: none;
+}
+/* hero */
+.hero h1 {
+    color: #ffffff;
+    text-align: center;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    
+}
+.hero {
+    background-color: #2f303a;
+}
+.button {
+    background: var(--link-hover-color);
+    width: 216px;
+    height: 50px;
+    top: 430px;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+        /* identical to box height, or 188% */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+    margin: 0 auto;
+    display: block;
+}
+
+/* page */
+.page ul {
+    display: flex;
+        justify-content: center;
+}
+.page h3 {
+    color: var(--primary-title-color);
+    font-size: 14px;
+    font-size: 14px;
+    line-height: 1.1;
+    text-transform: uppercase;
+}
+.page li {
+    display: inline-block;
+    width: 270px;
+    vertical-align: top;
+    font-size: 14px;
+    margin-right: 2.0;
+    line-height: 24px;
+    /* or 171% */
+}
+/* our activities */
+.activities {
+    text-align: center;
+}
+.activities h2 {
+    text-align: center;
+    color: var(--primary-title-color);
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+}
+.activities li {
+    display: inline-block;
+}
+/* our team */
+.team {
+    justify-content: center;
+    text-align: center;
+}
+.team h2, 
+.team h3 {
+    color: var(--primary-title-color);
+    text-align: center;
+}
+.team h2 {
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+}
+.team h3 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    /* identical to box height */
+    text-align: center;
+}
+.team li {
+    display: inline-block;
+}
+.team p {
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.2;
+    /* identical to box height */
+    text-align: center;
+}
+/* footer */
+.footer {
+    background-color: #2f303a;
+}
+.logo-white {
+    color:#ffffff99
+}
+.footer address {
+    color: #ffffff99;
+}
+.footer a {
+    color: var(--primary-text-color);
+    text-decoration: none;
+}
+address {
+    font-size: 14px;
+    line-height: 1.7;
+        /* or 171% */
+}
+.footer-contacts {
+    font-size: 14px;
+    line-height: 1.7;
+}
+.footer-contacts li {
+    list-style-type: none;
+}
+/* portfolio page */
+
+/* filter */
+.filter li {
+    list-style: none;
+    display: inline;
+}
+.filter button {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    border: 0;
+}
+.filter li button:hover {
+    background-color: var(--link-hover-color);
+    color: #FFFFFF; 
+    /*shadow*/
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+button {
+    cursor: pointer;
+}
+ul h3 {
+    font-size: 18px;
+    line-height: 2.0;
+    color: var(--primary-title-color);
+    letter-spacing: 0.06em;
+}
+.filter-cards p {
+    color: var(--primary-text-color);
+    font-size: 16px;
+    line-height: 1.9;
+}
+.filter-cards {
+    list-style-type: none;
+}
+.filter-cards li {
+    display: inline-block;
+}
