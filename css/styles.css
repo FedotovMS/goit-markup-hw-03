@@ -4,6 +4,11 @@
     --primary-link-color: #212121;
     --link-hover-color: #2196f3;
 }
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
 a {
     cursor: pointer;
 }
@@ -22,8 +27,7 @@ body {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
-    /* identical to box height */
-    
+    display: inline-block;
 }
 .logo-blue {
     color: var(--link-hover-color);
@@ -59,6 +63,12 @@ text-decoration: none;
 /* contacts */
 ul.contacts {
 color: var(--primary-text-color);
+list-style-type: none;
+}
+.site-nav {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
 }
 ul.contacts>li {
     display: inline-block;
@@ -66,6 +76,11 @@ ul.contacts>li {
     font-size: 14px;
     line-height: 1.1;
     letter-spacing: 0.02em;
+}
+.contacts {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
 }
 .cont-email:hover { 
     color:var(--link-hover-color);
@@ -76,6 +91,7 @@ ul.contacts>li {
 }
 /* hero */
 .hero h1 {
+    margin-top: 0px;
     color: #ffffff;
     text-align: center;
     font-weight: 900;
@@ -83,6 +99,7 @@ ul.contacts>li {
     line-height: 1.4;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    margin-bottom: 30px;
     
 }
 .hero {
@@ -90,27 +107,33 @@ ul.contacts>li {
 }
 .button {
     background: var(--link-hover-color);
-    width: 216px;
+    min-width: 216px;
     height: 50px;
     top: 430px;
     font-family: 'Roboto';
     font-weight: 700;
     font-size: 16px;
     line-height: 1.9;
-        /* identical to box height, or 188% */
-    display: flex;
-    align-items: center;
-    text-align: center;
+    display: inline-block;
+    border-radius: 4px;
+    padding: 10px 34px;
     letter-spacing: 0.06em;
     color: #ffffff;
     margin: 0 auto;
-    display: block;
+    text-align: center;
+    border: transparent;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 /* page */
 .page ul {
-    display: flex;
-        justify-content: center;
+    display: inline-block;
+    justify-content: center;
+    list-style-type: none;
+}
+.page {
+    padding-top: 94px;
+    margin-bottom: 94px;
 }
 .page h3 {
     color: var(--primary-title-color);
@@ -118,6 +141,8 @@ ul.contacts>li {
     font-size: 14px;
     line-height: 1.1;
     text-transform: uppercase;
+    margin-top: 0px;
+    margin-bottom: 10px;
 }
 .page li {
     display: inline-block;
@@ -126,11 +151,16 @@ ul.contacts>li {
     font-size: 14px;
     margin-right: 2.0;
     line-height: 24px;
-    /* or 171% */
+}
+.page p {
+    margin: 0px;
+
 }
 /* our activities */
 .activities {
     text-align: center;
+    margin-top: 0px;
+    margin-bottom: 94px;
 }
 .activities h2 {
     text-align: center;
@@ -138,6 +168,8 @@ ul.contacts>li {
     font-size: 36px;
     line-height: 1.2;
     text-align: center;
+    margin-top: 0px;
+    margin-bottom: 50px;
 }
 .activities li {
     display: inline-block;
@@ -146,60 +178,79 @@ ul.contacts>li {
 .team {
     justify-content: center;
     text-align: center;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 .team h2, 
 .team h3 {
     color: var(--primary-title-color);
     text-align: center;
+    margin: 0px;
 }
 .team h2 {
     font-size: 36px;
     line-height: 1.2;
     text-align: center;
+    margin-bottom: 50px;
 }
 .team h3 {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.2;
-    /* identical to box height */
     text-align: center;
 }
 .team li {
     display: inline-block;
+    list-style-type: none;
 }
 .team p {
     text-align: center;
     font-size: 16px;
     line-height: 1.2;
-    /* identical to box height */
     text-align: center;
 }
 /* footer */
+address {
+ padding: 0px;
+font-size: 14px;
+line-height: 1.7;
+letter-spacing: 0.03em;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+color: #FFFFFF;
+}
 .footer {
     background-color: #2f303a;
+}
+.logo-link {
+    margin-bottom: 20px;
 }
 .logo-white {
     color:#ffffff99
 }
-.footer address {
-    color: #ffffff99;
+.footer-info {
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
-.footer a {
-    color: var(--primary-text-color);
+.contacts-list .contacts-item{
+    display: inline-block;
     text-decoration: none;
+    color: var(--primary-text-color);
+    
 }
-address {
-    font-size: 14px;
-    line-height: 1.7;
-        /* or 171% */
-}
+
 .footer-contacts {
+    list-style-type: none;
     font-size: 14px;
     line-height: 1.7;
+    margin: 0px;
+    padding: 0px;
 }
-.footer-contacts li {
-    list-style-type: none;
-}
+/* .contacts-item {
+    margin-bottom: 9px;
+} */
+
 /* portfolio page */
 
 /* filter */
