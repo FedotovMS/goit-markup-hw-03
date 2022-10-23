@@ -333,6 +333,7 @@ color: #FFFFFF;
     justify-content: center;
     padding-bottom: 34px;
     padding-top: 94px;
+    margin: 0;
 }
 .filter li {
     list-style: none;
