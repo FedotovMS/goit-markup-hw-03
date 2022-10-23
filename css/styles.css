@@ -18,6 +18,9 @@ a {
 p {
     margin: 0px;
 }
+.section {
+    padding-bottom: 94px;
+}
 /* background color */
 header {
     border-bottom: 1px solid #ECECEC;
@@ -171,8 +174,6 @@ ul.contacts .item + .item {
 .page {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 94px;
-    padding-bottom: 94px;
 }
 .page h3 {
     color: var(--primary-title-color);
@@ -194,9 +195,9 @@ ul.contacts .item + .item {
 
 /* our activities */
 .activities {
-    text-align: center;
-    margin-top: 0px;
-    padding-bottom: 94px;
+    text-align: center;//////
+ / ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::"|||||||||||||||||||||||||||:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| margin-top: 0px;
+    /* padding-bottom: 94px; */
 }
 .activities h2 {
     text-align: center;
@@ -215,8 +216,20 @@ ul.contacts .item + .item {
     justify-content: center;
     text-align: center;
     padding-top: 94px;
-    padding-bottom: 94px;
+    background-color: #F5F4FA;
 }
+.backgrd {
+    background-color: #F5F4FA;
+}
+.team-cards > .item {
+    background: #FFFFFF;
+    /* material shadow v1 */
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+/* .team > .item > .img {
+    display: block;
+} */
 .team h2, 
 .team h3 {
     color: var(--primary-title-color);
@@ -235,9 +248,23 @@ ul.contacts .item + .item {
     line-height: 1.2;
     text-align: center;
 }
-.team li {
-    display: inline-block;
-    list-style-type: none;
+.team-cards {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.team-cards .item {
+    margin-right: 30px;
+}
+.team-cards .item:nth-child(4n) {
+    margin-right: 0px;
+}
+.team > li {
+    margin: 0;
+}
+.team .item {
+    list-style: none;
+    padding: 0;
 }
 .team p {
     text-align: center;
@@ -269,11 +296,10 @@ color: #FFFFFF;
     padding-top: 60px;
     padding-bottom: 60px;
 }
-.contacts-list .contacts-item{
+.contacts-list .contacts-item {
     display: inline-block;
     text-decoration: none;
     color: var(--primary-text-color);
-    
 }
 
 .footer-contacts {
