@@ -331,6 +331,8 @@ color: #FFFFFF;
     display: flex;
     padding: 0px;
     justify-content: center;
+    padding-bottom: 34px;
+    padding-top: 94px;
 }
 .filter li {
     list-style: none;
